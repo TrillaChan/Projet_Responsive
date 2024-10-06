@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>ImmobiLuxe</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/examples.css" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script src="js/color-modes.js"></script>
+    <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+        <div class="sidebar-header border-bottom">
+            <div class="sidebar-brand">
+                <img class="sidebar-brand-full" src="images/IMMOBILUXE.png" width="50" height="32" alt="CoreUI Logo">
+                <img class="sidebar-brand-narrow" src="images/logo.png" width="32" height="32" alt="CoreUI Logo">
+            </div>
+            <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark"
+                aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()"></button>
+        </div>
+        <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+            <li class="nav-item"><a class="nav-link" href="actualites.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+                    </svg> Actualités<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+            <li class="nav-title">Données entreprises</li>
+            <li class="nav-item"><a class="nav-link" href="client.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people"></use>
+                    </svg> Base Clients</a></li>
+            <li class="nav-item"><a class="nav-link" href="annonce.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-line-style"></use>
+                    </svg> Base Annonces</a></li>
+            <li class="nav-item"><a class="nav-link" href="analytique.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bar-chart"></use>
+                    </svg> Analytique</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contact"></use>
+                    </svg> Centre de contact</a></li>
+            <li class="nav-title">Données personnelles</li>
+            <li class="nav-item"><a class="nav-link" href="mesventes.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
+                    </svg> Mes ventes</a></li>
+            <li class="nav-item"><a class="nav-link" href="chat.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-phone"></use>
+                    </svg> Chat & Appels</a></li>
+            <li class="nav-item"><a class="nav-link" href="calendrier.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calendar"></use>
+                    </svg> Calendrier</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifs.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell-exclamation"></use>
+                    </svg> Notifications</a></li>
+            <li class="nav-item mt-auto"><a class="nav-link"
+                    href="https://coreui.io/docs/templates/installation/" target="_blank">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                    </svg> Paramètres</a></li>
+            <li class="nav-item"><a class="nav-link text-primary fw-semibold"
+                    href="https://coreui.io/product/bootstrap-dashboard-template/" target="_top">
+                    <svg class="nav-icon text-primary">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-input-power"></use>
+                    </svg>Support technique</a></li>
+        </ul>
+        <div class="sidebar-footer border-top d-none d-md-flex">
+            <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+        </div>
+    </div>
+
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <header class="header header-sticky p-0 mb-4">
+            <div class="container-fluid border-bottom px-4">
+                <button class="header-toggler" type="button"
+                    onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()"
+                    style="margin-inline-start: -14px;">
+                    <svg class="icon icon-lg">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+                    </svg>
+                </button>
+                <ul class="header-nav">
+                    <li class="nav-item py-1">
+                        <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button"
+                            aria-expanded="false" data-coreui-toggle="dropdown">
+                            <svg class="icon icon-lg theme-icon-active">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
+                            <li>
+                                <button class="dropdown-item d-flex align-items-center" type="button"
+                                    data-coreui-theme-value="light">
+                                    <svg class="icon icon-lg me-3">
+                                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
+                                    </svg>Light
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item d-flex align-items-center" type="button"
+                                    data-coreui-theme-value="dark">
+                                    <svg class="icon icon-lg me-3">
+                                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                                    </svg>Dark
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item d-flex align-items-center active" type="button"
+                                    data-coreui-theme-value="auto">
+                                    <svg class="icon icon-lg me-3">
+                                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                                    </svg>Auto
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item py-1">
+                        <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">
+                            <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg"
+                                    alt="user@email.com"></div></a>
+                        <div class="dropdown-menu dropdown-menu-end pt-0">
+                            <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top mb-2">
+                                Mon compte
+                            </div><a class="dropdown-item" href="#">
+                                <svg class="icon me-2">
+                                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                                </svg> Notifications<span class="badge badge-sm bg-info ms-2">7</span></a><a
+                                class="dropdown-item" href="#">
+                                <svg class="icon me-2">
+                                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                                </svg> Messages<span class="badge badge-sm bg-success ms-2">5</span></a><a
+                                class="dropdown-item" href="chat.html">
+                                <svg class="icon me-2">
+                                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
+                                </svg> Mes ventes<span class="badge badge-sm bg-danger ms-2">3</span></a><a
+                                class="dropdown-item" href="#">
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                                    <svg class="icon me-2">
+                                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                                    </svg> Paramètres</a><a class="dropdown-item" href="#">
+                                    <svg class="icon me-2">
+                                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
+                                    </svg> Vérouiller mon compte</a><a class="dropdown-item" href="connexion.html">
+                                    <svg class="icon me-2">
+                                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                                    </svg> Se déconnecter</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid px-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb my-0">
+                        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Base Annonces</li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
+        <div class="body flex-grow-1">
+            <div class="container-lg px-4">
+                <h1 class="text-center mb-4">Base Annonces</h1>
+                <form class="mb-4">
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Titre de l'annonce">
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-select">
+                                <option selected>Type de bien</option>
+                                <option value="1">Appartement</option>
+                                <option value="2">Maison</option>
+                                <option value="3">Terrain</option>
+                                <option value="4">Autre</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-select">
+                                <option selected>Statut</option>
+                                <option value="1">Disponible</option>
+                                <option value="2">Sous offre</option>
+                                <option value="3">Vendu</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-primary w-100">Rechercher</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Table of Annonces -->
+                <div class="table-responsive">
+                    <table class="table table-hover border mb-0">
+                        <thead class="fw-semibold text-nowrap">
+                            <tr>
+                                <th>ID</th>
+                                <th>Titre</th>
+                                <th>Type</th>
+                                <th>Statut</th>
+                                <th>Prix</th>
+                                <th>Date</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Maison avec jardin</td>
+                                <td>Maison</td>
+                                <td><span class="badge bg-success">Disponible</span></td>
+                                <td>350 000 €</td>
+                                <td>2024-10-01</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Détails</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Appartement T3 en centre-ville</td>
+                                <td>Appartement</td>
+                                <td><span class="badge bg-warning">Sous offre</span></td>
+                                <td>250 000 €</td>
+                                <td>2024-09-20</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Détails</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Maison avec jardin</td>
+                                <td>Maison</td>
+                                <td><span class="badge bg-success">Disponible</span></td>
+                                <td>350 000 €</td>
+                                <td>2024-10-01</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Appartement T3 en centre-ville</td>
+                                <td>Appartement</td>
+                                <td><span class="badge bg-warning">Sous offre</span></td>
+                                <td>250 000 €</td>
+                                <td>2024-09-20</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terrain constructible</td>
+                                <td>Terrain</td>
+                                <td><span class="badge bg-danger">Vendu</span></td>
+                                <td>150 000 €</td>
+                                <td>2024-08-15</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Villa moderne avec piscine</td>
+                                <td>Maison</td>
+                                <td><span class="badge bg-success">Disponible</span></td>
+                                <td>900 000 €</td>
+                                <td>2024-10-03</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Studio en centre-ville</td>
+                                <td>Appartement</td>
+                                <td><span class="badge bg-danger">Vendu</span></td>
+                                <td>120 000 €</td>
+                                <td>2024-07-25</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Maison de campagne avec grange</td>
+                                <td>Maison</td>
+                                <td><span class="badge bg-warning">Sous offre</span></td>
+                                <td>450 000 €</td>
+                                <td>2024-09-18</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Loft industriel</td>
+                                <td>Appartement</td>
+                                <td><span class="badge bg-success">Disponible</span></td>
+                                <td>650 000 €</td>
+                                <td>2024-10-02</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Duplex avec terrasse</td>
+                                <td>Appartement</td>
+                                <td><span class="badge bg-warning">Sous offre</span></td>
+                                <td>500 000 €</td>
+                                <td>2024-09-25</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Immeuble de rapport</td>
+                                <td>Immeuble</td>
+                                <td><span class="badge bg-success">Disponible</span></td>
+                                <td>1 200 000 €</td>
+                                <td>2024-10-04</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Penthouse avec vue panoramique</td>
+                                <td>Appartement</td>
+                                <td><span class="badge bg-danger">Vendu</span></td>
+                                <td>1 800 000 €</td>
+                                <td>2024-08-05</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Détails</button></td>
+                            </tr>                            
+                            <tr>
+                                <td>3</td>
+                                <td>Terrain constructible</td>
+                                <td>Terrain</td>
+                                <td><span class="badge bg-danger">Vendu</span></td>
+                                <td>150 000 €</td>
+                                <td>2024-08-15</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Détails</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer px-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-9">
+                    <a href="#">Copyright Notice</a> |
+                    <a href="#">Contact Information</a> |
+                    <a href="#">Privacy Policy Link</a> &copy; 2024 SN2 Projet Responsive.
+                </div>
+                <div class="col-12 col-md-3 text-md-end text-center mt-3 mt-md-0">
+                    <img src="images/IMMOBILUXE.png" alt="ImmobiLuxe Logo" style="max-width: 90px;">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- CoreUI and necessary plugins-->
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script>
+        const header = document.querySelector('header.header');
+
+        document.addEventListener('scroll', () => {
+            if (header) {
+                header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+            }
+        });
+    </script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.js"></script>
+    <script src="node_modules/@coreui/utils/dist/umd/index.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
